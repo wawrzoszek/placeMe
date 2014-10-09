@@ -1,0 +1,36 @@
+   <div class="list card" ng-controller="PWSingleCtrl as pwSingle" >
+
+		  <div class="item item-avatar">
+		    <img src="{{picture}}">
+		    <h2>{{username}}</h2>
+		    <p>November 05, 1955</p>
+		  </div>
+
+		  <div class="item item-body">
+		   
+		    <p>
+		      {{content}}
+		    </p>
+		    <p>
+		      <a href="#" class="subdued">1 Hearts</a>
+		      <a href="#" class="subdued">{{commentsnumber}} Comments</a>
+		    </p>
+		  </div>
+
+		  <div class="item tabs tabs-secondary tabs-icon-left">
+		    <div class="tab-item">
+		      <i class="icon ion-thumbsup"></i>
+		      Like
+		    </div>
+		    <div class="tab-item" ng-click="showModalComment()">
+		      <i class="icon ion-chatbox"></i>
+		      Comment
+		    </div>
+		    <a class="tab-item" href="mailto:{{email}}">
+		      <i class="icon ion-share"></i>
+		      Share
+		    </a>
+		  </div>
+
+		</div>
+
